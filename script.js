@@ -9,7 +9,8 @@ elements.forEach(el => {
 })
 
 let tickCount = 0;
-const totalTicks = 10; // 10 * (100ms tick dur) = 1 sec
+const totalTicks = 4; // 10 * (100ms tick dur) = 1 sec
+const tickDuration = 250;
 
 function scrambleTick() {
     tickCount++;
@@ -30,7 +31,7 @@ function scrambleTick() {
             el.textContent = finalTexts[index];
         });
     } else {
-        setTimeout(scrambleTick, 100); // 100ms per tikc
+        setTimeout(scrambleTick, tickDuration); // 100ms per tikc
     }
 }
 

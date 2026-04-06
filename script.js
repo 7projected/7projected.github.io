@@ -17,12 +17,13 @@ function scrambleTick() {
 
     elements.forEach((el, index) => {
         const text = finalTexts[index];
-        let scrambled = '';
-
-        for (let i = 0; i < text.length; i++) {
-            scrambled += scrambledLetters[Math.floor(Math.random() * scrambledLetters.length)];
-        }
-
+        const chars = text.split('');
+            for (let i = 0; i < chars.length; i++) {
+                if (chars[i] !== ' ') {
+                    chars[i] = scrambledLetters[Math.floor(Math.random() * scrambledLetters.length)];
+                }
+            }
+            const scrambled = chars.join('');
         el.textContent = scrambled;
     });
 

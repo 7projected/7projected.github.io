@@ -3,13 +3,13 @@ const scrambledLetters = ['1','2','3','4','5','6','7','8','9','0','!','@','#','$
 const elements = document.querySelectorAll("h1, p, li"); 
 const finalTexts = [];
 
-// Save original text
+// save txt
 elements.forEach(el => {
     finalTexts.push(el.textContent);
 })
 
 let tickCount = 0;
-const totalTicks = 10; // 20 ticks * 100ms = 2 seconds
+const totalTicks = 10; // 10 * (100ms tick dur) = 1 sec
 
 function scrambleTick() {
     tickCount++;
@@ -26,17 +26,16 @@ function scrambleTick() {
     });
 
     if (tickCount >= totalTicks) {
-        // final tick: restore the real text
         elements.forEach((el, index) => {
             el.textContent = finalTexts[index];
         });
     } else {
-        setTimeout(scrambleTick, 100); // next tick in 100ms
+        setTimeout(scrambleTick, 100); // 100ms per tikc
     }
 }
 
 function main() {
-    scrambleTick(); // start scrambling everything
+    scrambleTick();
 }
 
 main();

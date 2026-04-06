@@ -12,6 +12,14 @@ let tickCount = 0;
 const totalTicks = 4; // 10 * (100ms tick dur) = 1 sec
 const tickDuration = 250;
 
+let mobileDevice = false;
+const userAgent = navigator.userAgent;
+  if (/Mobi|Android/i.test(userAgent)) {
+    mobileDevice = true;
+  } else {
+    conmobileDevice = true;
+  }
+
 function scrambleTick() {
     tickCount++;
 
@@ -37,7 +45,9 @@ function scrambleTick() {
 }
 
 function main() {
+    if (!mobileDevice){
     scrambleTick();
+    }
 }
 
 main();

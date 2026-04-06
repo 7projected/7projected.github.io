@@ -1,0 +1,29 @@
+body {
+    font-family: "Noto Sans Linear A", sans-serif;
+
+    /* Set the background image */
+    background-image: url('img/background.png');
+
+    /* Make it cover the whole screen */
+    background-size: cover;
+
+    /* Keep it fixed when scrolling */
+    background-attachment: fixed;
+
+    /* Center it */
+    background-position: center;
+
+    /* Optional: don’t repeat */
+    background-repeat: no-repeat;
+
+    /* Optional: add a tint/overlay */
+    /* background-color: rgba(0,0,0,0.3); */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto 10px auto; /* top 0, bottom 50px, left/right auto */
+    padding: 10px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 3px;
+}

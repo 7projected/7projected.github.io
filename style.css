@@ -1,37 +1,49 @@
 body {
-    font-family: "JetBrains Mono", monospace;
-
-    /* Set the background image */
-    background-image: url('img/background.png');
-
-    /* Make it cover the whole screen */
-    background-size: cover;
-
-    /* Keep it fixed when scrolling */
-    background-attachment: fixed;
-
-    /* Center it */
-    background-position: center;
-
-    /* Optional: don’t repeat */
-    background-repeat: no-repeat;
-
-    /* Optional: add a tint/overlay */
-    /* background-color: rgba(0,0,0,0.3); */
+    background: #0F0F0F;
+    color: #f0f0f0;
 }
 
-h1, li, p {
-    color: #000000;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 1px 1px 0 rgb(0, 0, 0);
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
 
+li, p {
+    color: #FFFFFF;
+    text-align: center;
     font-size: 1.2rem;
 }
 
+a {
+    color: #afafff;
+}
+
 .container {
-    max-width: 900px;
-    margin: 0 auto 10px auto; /* top 0, bottom 50px, left/right auto */
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.534);
-    border-radius: 3px;
+    background: #2f2f2f;
+    border-radius: 6px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#profile {
+    background: #2f2f2f;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.3);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#portfolioitem{
+    background: #3f3f3f;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+ul.undotted { /* this signifies the item of type "ul" with the class "undotted"*/
+  list-style-type: none; /* rm dots */
+  padding: 0;            /* rm indentation */
+  margin: 0;             /* rm spacing */
 }

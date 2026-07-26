@@ -3,61 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6'5 Btw</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container" id="profile">
-        <h1>Profile</h1>
-        <ul>
-            <li>Name: Jake</li>
-            <li>Age: 17</li>
-            <li>Birthday: 06/25/08</li>
+    <div id="profile">
+        <h1  >Introduction</h1>
+        <ul class="undotted">
+            <li>Name: Jacob</li>
+            <li id="bday"></li>
+            <li id="age"></li>
         </ul>
     </div>
-    <div class="container" id="aboutMe">
-        <h1>About Me</h1>
-        <p>
-            I'm 17 and a programmer. I specialize in game developement. <br>
-            I rarely use social media but I have a 
-            <a href="https://www.tiktok.com/@boobgod" target="_blank">TikTok</a>, 
-            <a href="https://www.youtube.com/@7prjcoding" target="_blank">YouTube</a>, 
-            and a <a href="https://github.com/7projected" target="_blank">Github</a>. <br>
-            I started making games when I was around 7 or 8 on <a href="https://code.org" target="_blank">Code.org</a>. <br>
-        </p>
-    </div>
-    <div class="container" id="portfolio">
-        <h1>Portfolio</h1>
-        <p>
-            My name is Jake. I am a hobbyist programmer, and game developer. <br>
-            I have 10~ years of experience in different programming languages. <br>
-            The following are languages I know.
-        </p>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Lua</li>
-            <li>C#</li>
-            <li>C</li>
-            <li>HTML/CSS/JS</li>
-            <li>Rust</li>
-            <li>x64 ASM</li>
-        </ul>
-        <p>
-            I am from the USA. I graduated high school at 16, and have an IQ of 118. I hope to go to college, and study biology. <br>
-            Learning is my favorite thing; the following are my favorite subjects to learn about.
-        </p>
-        <ul>
-            <li>Biology</li>
-            <li>Anthropology</li>
-            <li>Evolutionary Biology</li>
-            <li>Physics</li>
-            <li>Quantum Physics</li>
-            <li>Aerodynamics</li>
-            <li>Computer Science</li>
-            <li>Math</li>
+    <div id="aboutme" class="container">
+        <h1 >About me</h1>
+        <ul class="undotted">
+            <li>Hello, I'm  Jake.</li>
+
+            <br> <br>
+
+            <li>I am an independent software and game developer from South-Eastern America.</li>
+            <li>I work with many programming languages to make applications, but for <br> game development I almost strictly use C#, Monogame, and a 
+                <a href="https://github.com/7projected/sevenFramework">custom framework</a> I'm working on.</li>
+
+            <br> <br>
+
+            <li>I am going to Cleveland State Community College for Biology, and would <br> like to specialize in Anthropology, or Zoology after I get my associates.
+            <br>My dream job is probably working in a zoo, or something along the lines of conservation.</li>
+
+            <br> <br>
+
+            <li>My hobbies include working out, programming, art, video games, speedrunning, and editing videos.</li>
         </ul>
     </div>
+    <div id="portfolio" class="container">
+        <h1 >Projects</h1>
+
+        <div id="portfolioitem" class="container">
+            <h2>Custom C# and Monogame Framework</h2>
+            <p>
+                <a href="https://github.com/7projected/sevenFramework">This framework</a> is one of the largest and most technically challenging projects I've built. <br> <br>
+                It handles many core systems required for game development, including <br> rendering, buffering, asset loading, tilemaps, sprites, transforms, cameras, debugging tools, and more. <br> <br>
+                I plan on continuing to work on it as I continue to make games, and apps. <br> It is fully open source, and I am currently working on cleaning it up, and writing documentation for it.
+            </p>
+        </div>
+
+
+        <div id="portfolioitem" class="container">
+            <h2>Simple Tilemap Tool</h2>
+            <p>
+                I made <a href-"https://github.com/7projected/simpleTilemapTool">this app</a> in a short period of time as well, but it has served me well.
+               <br> I used to frequently use this app to create maps for games before I found out how to use <a href="https://www.mapeditor.org/">Tiled</a>. <br> <br> It is a very basic tool, it saves and loads files to its own file type.
+                <br>The first two lines of the file are width and height. <br> The rest is a hexadecimal map of tile indexes. <br><br> The tool also has its own tileset generator.
+                You input an image and some fields and it creates a tileset file.
+                
+            </p>
+        </div>
+
+        <div id="portfolioitem" class="container">
+            <h2>Aim Trainer</h1>
+                <p>
+                    I made <a href="https://github.com/7projected/aimTrainer">this app</a> in python when I first started using pygame.
+                    Then a few years later, I <a href="https://github.com/7projected/aimTrainerRemake">remade it</a>. <br>
+                    It's nothing special whatsoever, you just click buttons as fast as you can. <br>I actually made both of the projects in around 5 hours.
+                </p>
+        </div>
+        
+
+        <div id="portfolioitem" class="container">
+            <h2>Bullet Dodging Game</h2>
+            <p>
+                I made <a href="https://github.com/7projected/monogameShooter">this game</a> also in a day. <br>
+                I made this game to teach myself the Monogame framework after briefly using the <a href="https://unity.com">Unity</a> game engine. <br>
+                It's probably the most simple game possible.  <br> An infinite game where you dodge bullets for score, and the game gets progressively harder. <br>
+                I'm not proud of this game, it's the least impressive game I've ever made.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,9 +1,11 @@
 body {
     background: #0F0F0F;
     color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
@@ -11,39 +13,64 @@ li, p {
     color: #FFFFFF;
     text-align: center;
     font-size: 1.2rem;
+    max-width: 70ch;
+    margin: 0 auto;
 }
 
 a {
     color: #afafff;
 }
 
+/* General content containers */
 .container {
     background: #2f2f2f;
     border-radius: 6px;
-    padding: 25px;
+    padding: 1.5rem;
     box-shadow: 0 8px 25px rgba(0,0,0,.3);
-    margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+
+    width: min(90%, 1000px);
+    margin: 20px auto;
 }
 
+/* Profile section */
 #profile {
     background: #2f2f2f;
     border-radius: 12px;
-    padding: 25px;
+    padding: 1.5rem;
     box-shadow: 0 8px 25px rgba(0,0,0,.3);
-    margin-left: 100px;
-    margin-right: 100px;
+
+    width: min(95%, 1200px);
+    margin: 20px auto;
 }
 
-#portfolioitem{
+/* Portfolio items */
+#portfolioitem {
     background: #3f3f3f;
-    margin-left: 300px;
-    margin-right: 300px;
+    border-radius: 6px;
+    padding: 1rem;
+
+    width: min(80%, 700px);
+    margin: 20px auto;
 }
 
-ul.undotted { /* this signifies the item of type "ul" with the class "undotted"*/
-  list-style-type: none; /* rm dots */
-  padding: 0;            /* rm indentation */
-  margin: 0;             /* rm spacing */
+ul.undotted {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Phones */
+@media (max-width: 768px) {
+
+    p, li {
+        font-size: 1rem;
+    }
+
+    .container,
+    #profile,
+    #portfolioitem {
+        width: 95%;
+        padding: 1rem;
+    }
+
 }
